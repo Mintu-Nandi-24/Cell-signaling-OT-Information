@@ -11,15 +11,11 @@ This repository contains Python scripts for analyzing **Mutual Information (MI)*
 Computes MI and 2-WD between TNF dose (input) and cellular response (output) using experimental summary data (conditional means and standard deviations).  
 
 **Key Features:**  
-- Constructs Gaussian conditional response distributions \( p(y|x) \).  
-- Optimizes input distribution \( p(x) \) to match experimentally reported MI.  
-- Computes marginal \( p(y) \), joint \( p(x,y) \), and 2-WD via quantile mapping.  
-- Estimates uncertainty via bootstrap resampling.  
-- Generates figures:  
-  - Joint distributions with marginals.  
-  - MI vs 2-WD scatter plot.  
-  - CDFs of input and output distributions.  
-- Exports all numerical distributions and diagnostics (`MI_WD_exports/`).  
+- Constructs Gaussian conditional response distributions \( P(y|x) \).  
+- Optimizes input distribution \( P(x) \) to match experimentally reported MI.  
+- Computes marginal \( P(y) \), joint \( P(x,y) \), and 2-WD via quantile mapping.  
+- Estimates uncertainty via bootstrap resampling. 
+- Exports all numerical distributions and diagnostics.  
 
 **Output Files:**  
 - `*_py_given_x{i}.dat` (conditional distributions)  
@@ -36,16 +32,16 @@ Computes MI and 2-WD between TNF dose (input) and cellular response (output) usi
 Evaluates numerical convergence of MI and 2-WD as a function of discretization density (ρ_Z) in the response variable.  
 
 **Key Features:**  
-- Varies grid resolution (`points_per_std`) for conditional distributions.  
+- Varies grid resolution (`points_per_std` = discretization density) for conditional distributions.  
 - Optimizes input distribution to reproduce target MI.  
-- Tracks convergence of MI and 2-WD with respect to discretization density.  
-- Plots MI and 2-WD vs resolution, and maps number of bins \( n_Z \).  
-- Exports convergence diagnostics to `MI_WD_exports/`.  
+- Tracks convergence of MI and 2-WD with respect to `points_per_std`.  
+- Plots MI and 2-WD vs resolution, and also plots discretized bins \( n_Z \).  
+- Exports convergence diagnostics.  
 
 **Output Files:**  
 - `{label}_pps-ny-W2.dat` with:  
   - `points_per_std` (ρ_Z)  
-  - `n_y` (number of bins, n_Z)  
+  - `n_y` (discretized bins, n_Z)  
   - `2-WD values`  
 
 ---
@@ -60,7 +56,7 @@ Estimates mapping (conversion) factors between TNF dose and cellular response.
   - Primary model = linear or flat (chosen by R²).  
   - Secondary (comparison only) = Hill fit.  
 - Generates plots of raw data with error bars and fitted curves.  
-- Exports parameter tables and fitted curves to `MI_WD_exports/`.  
+- Exports parameter tables and fitted curves.  
 
 **Output Files:**  
 - `WT-hill-fit-param-nfkb-aft2.dat` (Hill fit parameters for WT).  
@@ -98,7 +94,7 @@ python MI-WD-convergence.py
 python mapping-factor-estimation.py
 ```
 
-Each script will display figures and export results into the `MI_WD_exports/` directory.
+Each script will display figures and export results.
 
 ---
 
