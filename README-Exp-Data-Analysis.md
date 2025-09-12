@@ -1,6 +1,6 @@
 # TNF Signaling: Mutual Information and 2-Wasserstein Distance Estimation
 
-This repository contains Python scripts for analyzing **Mutual Information (MI)** and **2-Wasserstein Distance (2-WD)** in TNF signaling networks, based on NF-κB and ATF-2 responses in WT and A20-deficient cells. The workflow combines statistical inference, optimization, and convergence diagnostics to quantify information–geometry trade-offs in cellular signaling.
+This repository contains Python scripts for analyzing **Mutual Information (MI)** and **2-Wasserstein Distance (WD)** in TNF signaling networks, based on NF-κB and ATF-2 responses in WT and A20-deficient cells. The workflow combines statistical inference, optimization, and convergence diagnostics to quantify information–geometry trade-offs in cellular signaling.
 
 ---
 
