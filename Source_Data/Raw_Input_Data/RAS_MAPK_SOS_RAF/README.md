@@ -8,4 +8,4 @@ Original repository: https://github.com/YasushiSako/transfer_entropy_2/
 
 According to the original repository README, the CSV data files contain time courses of protein translocation in single cells. The first column indicates time after EGF stimulation in minutes, and subsequent columns indicate signal intensities in individual cells. The SOS and RAF responses with the same cell index were obtained simultaneously in the same cell.
 
-The original repository indicates that these data are licensed under CC-BY-NC-SA 4.0. Therefore, the raw SOS/RAF CSV files are not redistributed here. Users should obtain the raw input data from the original repository and cite the original study. This repository provides the analysis script and processed output files generated for the present optimal-transport/information-theoretic reanalysis.
+Users can obtain the raw input data from the original repository and cite the original study. 
