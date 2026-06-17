@@ -9,14 +9,14 @@ The repository is organized to support reproducibility of the theoretical motif 
 ## Repository structure
 
 ```text
-source_code/
-source_data/
+Source_Code/
+Source_Data/
 README.md
 ```
 
 ## Source code
 
-The `source_code/` folder contains the Mathematica notebooks and Python scripts used to generate the theoretical and experimental analysis results.
+The `Source_Code/` folder contains the Mathematica notebooks and Python scripts used to generate the theoretical and experimental analysis results.
 
 Please see the README files inside `source_code/` for details on:
 
@@ -28,7 +28,7 @@ Please see the README files inside `source_code/` for details on:
 
 ## Source data
 
-The `source_data/` folder contains the numerical input data and processed output data underlying the main and supplementary figures.
+The `Source_Data/` folder contains the numerical input data and processed output data underlying the main and supplementary figures.
 
 Please see the README file inside `source_data/` and the accompanying `Source_Data_Index.xlsx` file for details on:
 
@@ -47,7 +47,7 @@ Please see the README file inside `source_data/` and the accompanying `Source_Da
 
 * The SOS/RAF raw input data used for the RAS-MAPK reanalysis should be downloaded from the original repository associated with:
 
-  Umeki N, Kabashima Y, Sako Y. Evaluation of information flows in the RAS-MAPK system using transfer entropy measurements. eLife. 2025;14. doi:10.7554/eLife.104432.
+  Umeki N, Kabashima Y, Sako Y. Evaluation of information flows in the RAS-MAPK system using transfer entropy measurements. eLife. 2025;14:e104432. doi:10.7554/eLife.104432.
 
   Original repository:
 
@@ -63,5 +63,5 @@ If you use the code or processed data in this repository, please cite the associ
 
 ## Author
 
-Mintu Nandi
+Mintu Nandi,
 Universal Biology Institute, The University of Tokyo
